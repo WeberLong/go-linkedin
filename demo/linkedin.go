@@ -67,7 +67,7 @@ func Auth(c echo.Context) error {
 
 			byteRespData, err := json.Marshal(resp)
 			if err != nil {
-				err := errors.New("json编码脉脉职业信息出错")
+				err := errors.New("json编码职业信息出错")
 				return err
 			}
 
@@ -75,7 +75,7 @@ func Auth(c echo.Context) error {
 			err = json.Unmarshal(byteRespData, &respData)
 
 			if err != nil {
-				err := errors.New("json编码脉脉职业信息出错")
+				err := errors.New("json编码职业信息出错")
 				return err
 			}
 
